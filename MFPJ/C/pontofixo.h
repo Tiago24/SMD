@@ -2,8 +2,8 @@
 #define PONTOFIXO_H_INCLUDED
 
 typedef struct {
-    unsigned short parteInteira;
-    unsigned short parteFracionaria;
+    int parteInteira;
+    int parteFracionaria;
 } PontoFixo;
 
 void zero(PontoFixo);
