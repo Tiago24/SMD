@@ -6,8 +6,9 @@ typedef struct {
     unsigned short parteFracionaria;
 } PontoFixo;
 
-PontoFixo soma(PontoFixo a, PontoFixo b);
-PontoFixo subtracao(PontoFixo a, PontoFixo b);
-PontoFixo produto(PontoFixo a, PontoFixo b);
+void zero(PontoFixo);
+PontoFixo soma(PontoFixo, PontoFixo);
+PontoFixo subtracao(PontoFixo, PontoFixo);
+char* toString(PontoFixo);
 
 #endif // PONTOFIXO_H_INCLUDED
