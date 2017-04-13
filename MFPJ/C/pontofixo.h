@@ -9,6 +9,9 @@ typedef struct {
 void zero(PontoFixo);
 PontoFixo soma(PontoFixo, PontoFixo);
 PontoFixo subtracao(PontoFixo, PontoFixo);
+PontoFixo produto(PontoFixo, PontoFixo);
+int juntarPartes(PontoFixo);
+PontoFixo separarPartes(int, int);
 char* toString(PontoFixo);
 
 #endif // PONTOFIXO_H_INCLUDED
