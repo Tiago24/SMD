@@ -8,26 +8,43 @@ void zero(PontoFixo p) {
 
 PontoFixo soma(PontoFixo a, PontoFixo b) {
     PontoFixo c;
-    c.parteInteira = 0;
-    c.parteFracionaria = a.parteFracionaria + b.parteFracionaria;
-    while(c.parteFracionaria >= 1000) {
-        c.parteFracionaria -= 1000;
-        c.parteInteira++;
-    }
-    c.parteInteira += a.parteInteira + b.parteInteira;
+    int x, y;
+    x = juntarPartes(a);
+    y = juntarPartes(b);
+    x += y;
+    c = separarPartes(x, 1000);
     return c;
 }
 
 PontoFixo subtracao(PontoFixo a, PontoFixo b) {
     PontoFixo c;
-    c.parteInteira = 0;
-    c.parteFracionaria = a.parteFracionaria - b.parteFracionaria;
-    while(c.parteFracionaria <= -1000) {
-        c.parteFracionaria += 1000;
-        c.parteInteira--;
-    }
-    c.parteInteira += a.parteInteira - b.parteInteira;
+    int x, y;
+    x = juntarPartes(a);
+    y = juntarPartes(b);
+    x -= y;
+    c = separarPartes(x, 1000);
     return c;
+}
+
+PontoFixo produto(PontoFixo a, PontoFixo b) {
+    PontoFixo c;
+    int x, y;
+    x = (juntarPartes(a)) * 1000;
+    y = (juntarPartes(b)) * 1000;
+    x *= y;
+    c = separarPartes(x, 1000000);
+    return c;
+}
+
+int juntarPartes(PontoFixo p) {
+    return (p.parteInteira * 1000 + p.parteFracionaria);
+}
+
+PontoFixo separarPartes(int i, int divisor) {
+    PontoFixo p;
+    p.parteInteira = i / divisor;
+    p.parteFracionaria = i % divisor;
+    return p;
 }
 
 char* toString(PontoFixo p) {
