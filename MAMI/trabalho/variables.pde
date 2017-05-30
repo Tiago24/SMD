@@ -1,0 +1,1 @@
+float a, m, s, b, e, c, l;
