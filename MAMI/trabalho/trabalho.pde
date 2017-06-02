@@ -18,9 +18,9 @@ void draw() {
   // MATIZ(0, 270)
   m = random(0, 270);
   // SATURAÇÃO(80, 100)
-  s = random(80, 100);
+  s = 80;
   // BRILHO(50, 100)
-  b = random(50, 100);
+  b = 50;
   // LADO(10% DA TELA, 25% DA TELA)
   l = random(L*0.10, L*0.25);
   //DESENHO
@@ -72,16 +72,12 @@ void draw() {
   rotate(-a);
   a = random(-PI/18, PI/18);
   m = random(0, 270);
-  s = random(80, 100);
-  b = random(50, 100);
   translate(0, -20);
   linha(0, 0, c, e, m, s, b);
 
   rotate(-a);
   // SEGUNDO QUADRADO
   m = random(0, 270);
-  s = random(80, 100);
-  b = random(50, 100);
   l = random(L*0.10, L*0.25);
   //DESENHO
   translate(random(L/3, L/2), random(L/4, L/3));
@@ -107,8 +103,6 @@ void draw() {
   rotate(-a);
   a = random(-PI/18, PI/18);
   m = random(0, 270);
-  s = random(80, 100);
-  b = random(50, 100);
   c = random(L*0.30, L*0.65);
   translate(0, -20);
   linha(0, 0, -c, e, m, s, b);
@@ -116,8 +110,6 @@ void draw() {
   rotate(-a);
   // MAIS UM QUADRADO
   m = random(0, 270);
-  s = random(80, 100);
-  b = random(50, 100);
   l = random(L*0.10, L*0.25);
   //DESENHO
   translate(50, -200);
