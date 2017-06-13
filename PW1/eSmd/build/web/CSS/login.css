@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/06/2017, 22:40:09
+    Author     : tiago
+*/
+body{
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+    font-family: arial, sans-serif;
+}
+table#acesso{
+    margin: auto;
+    background-color: #ffffff;
+    height: 400px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+table#acesso th{
+    font-size: 30pt;
+    padding: 10px;
+}
+
+

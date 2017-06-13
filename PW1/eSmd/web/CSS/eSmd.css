@@ -1,0 +1,193 @@
+/* 
+    Created on : 03/06/2017, 23:26:38
+    Author     : tiago
+*/
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+body{
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+    font-family: arial, sans-serif;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+div#interface{
+    background-color: #ffffff;
+    width: 900px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+    margin: -23px auto 0px auto;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style: none;
+}
+header{
+    height: 250px;
+}
+nav#menu-principal{
+    display: block;
+}
+nav#menu-principal ul{
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    margin: -2px;
+    left: 400px;
+}
+nav#menu-principal li{
+    display: inline-block;
+    background-color: #5395a8;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu-principal li:hover{
+    background-color: #0bccf3;
+}
+nav#menu-principal a{
+    color: #000000;
+}
+nav#menu-principal a:hover{
+    color: #ffffff;
+}
+aside{
+    float: left;
+    width: 200px;
+}
+nav#menu-categoria{
+    display: block;
+}
+nav#menu-categoria ul{
+    text-transform: uppercase;
+    position: relative;
+    width: 150px;
+}
+nav#menu-categoria li{
+    background-color: #5395a8;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.1s;
+}
+nav#menu-categoria li:hover{
+    background-color: #0bccf3;
+}
+nav#categoria a{
+    color: #000000;
+}
+nav#menu-categoria a:hover{
+    color: #ffffff;
+}
+section{
+    float: left;
+    width: 700px;
+}
+ul#categoria{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px;
+}
+ul#categoria li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.4s linear;
+}
+ul#categoria li:hover{
+    -webkit-transform: scale(1.5);
+}
+ul#categoria li#categoria01{
+    background: url(../IMG/acao.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria02{
+    background: url(../IMG/aventura.png) no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria03{
+    background: url(../IMG/esporte.png) no-repeat;
+    background-position: 50% 50%; 
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria04{
+    background: url(../IMG/corrida.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria05{
+    background: url(../IMG/guerra.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria06{
+    background: url(../IMG/plataforma.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria07{
+    background: url(../IMG/estrategia.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria07:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#categoria li#categoria08{
+    background: url(../IMG/luta.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#categoria li#categoria08:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+footer{
+    clear: both;
+    height: 60px;
+}
+
