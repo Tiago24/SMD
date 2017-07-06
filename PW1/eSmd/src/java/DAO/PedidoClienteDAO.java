@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package DAO;
 
+import Connectivity.DBConnection;
+import Model.PedidoCliente;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,13 +25,14 @@ public class PedidoClienteDAO {
         List<PedidoCliente> resultado = new ArrayList<>();
         
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-            String url = "jdbc:mysql://localhost:3306/eSmd";
-            String username = "admin";
-            String password = "admin";
-            
-            Connection c = DriverManager.getConnection(url, username, password);
+//            Class.forName("com.mysql.jdbc.Driver");
+//            
+//            String url = "jdbc:mysql://localhost:3306/eSmd";
+//            String username = "admin";
+//            String password = "admin";
+//            
+//            Connection c = DriverManager.getConnection(url, username, password);
+            Connection c = DBConnection.connect("mysql");
             
             String query = "SELECT * FROM Cliente";
             
@@ -46,8 +48,8 @@ public class PedidoClienteDAO {
                 pc.setCliente(rs.getInt("cliente"));
                 resultado.add(pc);
             }
-        } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(PedidoClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException e) {
+            Logger.getLogger(PedidoClienteDAO.class.getName()).log(Level.SEVERE, null, e);
         }
         
         return resultado;

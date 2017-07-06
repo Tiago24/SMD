@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package DAO;
 
+import Connectivity.DBConnection;
+import Model.Categoria;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,15 +25,17 @@ public class CategoriaDAO {
         List<Categoria> resultado = new ArrayList<>();
         
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            
+//            String url = "jdbc:mysql://localhost:3306/eSmd";
+//            String username = "admin";
+//            String password = "admin";
+//            
+//            Connection c = DriverManager.getConnection(url, username, password);
+            Connection c = DBConnection.connect("mysql");
             
-            String url = "jdbc:mysql://localhost:3306/eSmd";
             String query = "SELECT * FROM Categoria";
-            String username = "admin";
-            String password = "admin";
 
-            Connection c = DriverManager.getConnection(url, username, password);
-            
             PreparedStatement ps = c.prepareStatement(query);
             ResultSet rs = ps.executeQuery(query);
             while(rs.next()) {
@@ -42,7 +45,7 @@ public class CategoriaDAO {
                 ctg.setNome(rs.getString("nome"));
                 resultado.add(ctg);
             }
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             Logger.getLogger(CategoriaDAO.class.getName()).log(Level.SEVERE, null, e);
         }
         

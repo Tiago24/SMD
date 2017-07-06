@@ -5,13 +5,14 @@
  */
 package Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  *
  * @author William Ribeiro
  */
-public class Produto {
+public class Produto implements Serializable {
     private int idProduto;
     private String nome;
     private double preco;
