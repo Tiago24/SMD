@@ -29,10 +29,6 @@ public class DBConnection {
                     db = "org.postgresql.Driver";
                     url = "jdbc:postgresql://localhost:5432/eSmd";
                     break;
-                case "odbc":
-                    db = "sun.jdbc.odbc.JdbcOdbcDriver";
-                    url = "jdbc:odbc:eSmd";
-                    break;
             }
 
             username = "admin";
