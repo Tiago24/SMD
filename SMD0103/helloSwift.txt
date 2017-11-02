@@ -1,0 +1,5 @@
+/**
+ * Hello World em Swift
+ */
+
+print("Hello, world!")

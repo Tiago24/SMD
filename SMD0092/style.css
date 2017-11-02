@@ -1,0 +1,97 @@
+* {
+	font-family: "Source Code Pro Black";
+}
+
+#sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar #close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#menubar {
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #C0C0C0;
+}
+
+#icon {
+	cursor: pointer;
+}
+
+#menu {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+#menubar a {
+	float: left;
+	text-align: left;
+}
+
+#title {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: white;
+}
+
+#main {
+	margin-top: 70px;
+	padding-left: 50px;
+}
+
+#img1, #img2, #img3 {
+	width: 30%;
+	position: fixed;
+}
+
+#img1 {
+	top: 20%;
+	left: 35%;
+}
+
+#img2 {
+	bottom: 10%;
+	left: 14%;
+}
+
+#img3 {
+	bottom: 10%;
+	right: 14%;
+}
+
+#rgb, #cmyk {
+	padding: 30px;
+}
+
+#imgRGB, #imgCMYK {
+	width: 10%;
+}
