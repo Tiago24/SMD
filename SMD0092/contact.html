@@ -3,19 +3,17 @@
 	<head>
 		<title>Projeto Integrado I - G.R.U.P.O.</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
-		<div id="sidebar">
-			<a href="javascript:void(0)" id="close">&times;</a>
+		<div id="sidebar" class="sidenav">
 			<a href="#">Capítulos</a>
+			<a href="contact.html">Contato</a>
+			<a href="about.html">Sobre</a>
 		</div>
 		<div id="menubar">
-			<a id="icon"">
-				<div id="menu"></div>
-				<div id="menu"></div>
-				<div id="menu"></div>
-			</a>
-			<a id="title">&#9776;Contato</a>
+			<a id="icon" onclick="toggleNav()">&#9776;</a>
+			<a id="title">Contato</a>
 		</div>
 		<div id="main">
 			<p>Se quiser relatar algo ao editor, dar dicas de novos tópicos ou tem dúvidas sobre algum assunto, preencha o formulário abaixo e nos envie sua mensagem. Responderemos em breve.</p>

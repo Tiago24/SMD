@@ -2,29 +2,33 @@
 	font-family: "Source Code Pro Black";
 }
 
-#sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
+.sidenav {
+    height: 21%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
-#sidebar a {
-    padding: 8px 8px 8px 32px;
+.sidenav a {
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
+    text-align: center;
 }
 
-#sidebar #close {
+.sidenav a:hover {
+    color: #F1F1F1;
+}
+
+.sidenav .closeBtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -38,18 +42,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #C0C0C0;
-}
-
-#icon {
-	cursor: pointer;
-}
-
-#menu {
-	width: 35px;
-	height: 5px;
-	background-color: black;
-	margin: 6px 0;
+	background-color: #A0A0A0;
 }
 
 #menubar a {
@@ -57,15 +50,24 @@
 	text-align: left;
 }
 
+#icon, #title {
+	color: white;
+}
+
+#icon {
+	cursor: pointer;
+	font-size: 30px;
+}
+
 #title {
 	margin-left: 20px;
 	margin-top: 10px;
-	color: white;
 }
 
 #main {
 	margin-top: 70px;
 	padding-left: 50px;
+	padding-right: 50px;
 }
 
 #img1, #img2, #img3 {
@@ -88,10 +90,18 @@
 	right: 14%;
 }
 
-#rgb, #cmyk {
+#rgb, #cmyk, #whatisit, #type, #diff, #adv, #team, #smd {
 	padding: 30px;
 }
 
-#imgRGB, #imgCMYK {
-	width: 10%;
+#imgRGB, #imgCMYK, #imgChroma, #imgType, #imgGrupo, #imgSMD {
+	width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	vertical-align: top;
 }
