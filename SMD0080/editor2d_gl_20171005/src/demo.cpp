@@ -98,21 +98,15 @@ int main( int argc, char** argv )
 	PenTool penTool;
 	PixelTool pixelTool;
 	LineTool lineTool;
+	DDATool ddaTool;
+	BresenhamTool bresenhamTool;
 
 	drawingTools[ '7' ] = &pixelTool;
 	drawingTools[ '8' ] = &penTool;
-	drawingTools[ '9' ] = &lineTool;
+	drawingTools[ '9' ] = &ddaTool;
+	drawingTools[ '0' ] = &bresenhamTool;
 
 
-
-	/*
-	// TODO se alguém quiser, pode criar uma janela secundária para lidar com as ferramentas
-	glutCreateWindow( "Ferramentas" );
-	glutDisplayFunc( meuPintaCena );
-	glutKeyboardFunc( trataTeclado );
-	glutMouseFunc( trataMouseClick );
-	glutMotionFunc( trataMouseMove );
-	*/
 
 	glutMainLoop();
 	

@@ -38,6 +38,8 @@ public:
 	void drawRect( pixel cor, int x1, int y1, int x2, int y2 );
 	void fillRect( pixel cor, int x1, int y1, int x2, int y2 );
 	void lineMidPoint( pixel cor, int x1, int y1, int x2, int y2  );
+	void lineDDA( pixel cor, int x1, int y1, int x2, int y2  );
+	void lineBresenham( pixel cor, int x1, int y1, int x2, int y2  );
 
 
 	void clear( pixel bgColor =0 );

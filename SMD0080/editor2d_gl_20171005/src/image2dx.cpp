@@ -198,6 +198,61 @@ void Image::lineMidPoint( pixel cor, int x1, int y1, int x2, int y2  )
 
 }
 // =========================================================================================
+void Image::lineDDA( pixel cor, int x1, int y1, int x2, int y2  )
+{
+	int dx = x2 - x1;
+	int dy = y2 - y1;
+
+	int step = (abs(dx) > abs(dy)) ? abs(dx) : abs(dy);
+
+	float stepX = dx / (float) step;
+	float stepY = dy / (float) step;
+	float x = (float) x1;
+	float y = (float) y1;
+
+	for(int i = 0; i <= step; ++i)
+	{
+		setPixelSafe(cor, x, y);
+		x += stepX;
+		y += stepY;
+	}
+}
+// =========================================================================================
+void Image::lineBresenham( pixel cor, int x1, int y1, int x2, int y2  )
+{
+	const bool step = (abs(y2 - y1) > abs(x2 - x1));
+	if(step)
+	{
+		std::swap(x1, y1);
+		std::swap(x2, y2);
+	}
+	if(x1 > x2)
+	{
+		std::swap(x1, x2);
+		std::swap(y1, y2);
+	}
+
+	const int dx = x2 - x1;
+	const int dy = abs(y2 - y1);
+
+	int e = dx / 2;
+	const int stepY = (y1 < y2) ? 1 : -1;
+	int y = y1;
+
+	for(int x = x1; x <= x2; ++x)
+	{
+		if(step) setPixelSafe(cor, y, x);
+		else setPixelSafe(cor, x, y);
+
+		e -= dy;
+		if(e < 0)
+		{
+			y += stepY;
+			e += dx;
+		}
+	}
+}
+// =========================================================================================
 void Image::clear( pixel bg )
 {
 #if	0

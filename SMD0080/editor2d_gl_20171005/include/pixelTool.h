@@ -106,4 +106,68 @@ protected:
 };
 
 
+class DDATool : public DrawingTool
+{
+public:
+
+	DDATool ()
+		: DrawingTool ()
+	{
+	}
+
+	virtual ~DDATool ()
+	{
+	}
+
+protected:
+
+	virtual bool _onMouseDown( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineDDA(color, downX, downY, pixelX, pixelY );
+		return false;
+	}
+	virtual void _onMouseUp( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineDDA(color, downX, downY, pixelX, pixelY );
+	}
+	virtual  bool _onMouseMove( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineDDA(color, downX, downY, pixelX, pixelY );
+		return false;
+	}
+};
+
+
+class BresenhamTool : public DrawingTool
+{
+public:
+
+	BresenhamTool ()
+		: DrawingTool ()
+	{
+	}
+
+	virtual ~BresenhamTool ()
+	{
+	}
+
+protected:
+
+	virtual bool _onMouseDown( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineBresenham(color, downX, downY, pixelX, pixelY );
+		return false;
+	}
+	virtual void _onMouseUp( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineBresenham(color, downX, downY, pixelX, pixelY );
+	}
+	virtual  bool _onMouseMove( Image& img, int pixelX, int pixelY ) override
+	{
+		img.lineBresenham(color, downX, downY, pixelX, pixelY );
+		return false;
+	}
+};
+
+
 #endif /* INCLUDE_PIXELTOOL_H_ */
