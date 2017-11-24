@@ -4,6 +4,9 @@
 		<meta charset="UTF-8"/>
 		<title>Projeto Integrado I - G.R.U.P.O.</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
 		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="processing.min.js"></script>
 	</head>
@@ -21,32 +24,39 @@
 			<a id="title">Cores Quentes e Frias</a>
 		</div>
 		<div id="main">
-			<table id="diff">
-				<col width="80%">
+			<table>
 				<col width="20%">
+				<col width="80%">
 				<tr>
-					<th>O estudo de Cores Quentes e Frias</th>
-					<th></th>
+					<th rowspan=2><img class="imgTemp" src="data/Picture1.png"></th>
+					<th>O estudo de Cores Quentes e Frias:</th>
 				</tr>
 				<tr>
 					<td>
 						<p>Wilhelm Maximilian Wundt foi um filósofo, médico e psicólogo alemão que estabeleceu a divisão fundamental entre cores quentes e frias e estudou como elas podem causar diferentes sensações sobre o observador.</p>
 						<p>Ele acreditava que cores quentes são psicologicamente dinâmicas e estimulantes como a luz solar ou chamas de uma fogueira, incitando a sensação de vitalidade, alegria, movimento e excitação. Por outro lado, cores frias seriam estáticas e calmas como o gelo, trazendo a sensação de tranquilidade e suavidade.</p>
 					</td>
-					<td><img id="imgType" src="data/warmcool.png" alt="coolvwarm"></td>
 				</tr>
+			</table><br>
+			<table>
+				<col width="80%">
+				<col width="20%">
 				<tr>
-					<th>Temperatura das cores</th>
-					<th></th>
+					<th>Temperatura das cores:</th>
+					<th rowspan=2><img class="imgTemp" src="data/warmcool.png"></th>
 				</tr>
 					<tr>
 					<td>
-						<p> A temperatura das cores é a capacidade que toda cor tem de parecer quente ou fria e, a partir disso, transmitir sensações ao observador. Pode-se dividir um círculo cromático ao meio com uma linha vertical cortando os tons de amarelo e violeta. A partir disso, é possível perceber duas metades correspondentes às cores quentes e frias.</p>
+						<p>A temperatura das cores é a capacidade que toda cor tem de parecer quente ou fria e, a partir disso, transmitir sensações ao observador. Pode-se dividir um círculo cromático ao meio com uma linha vertical cortando os tons de amarelo e violeta. A partir disso, é possível perceber duas metades correspondentes às cores quentes e frias.</p>
 					</td>
 				</tr>
+			</table><br>
+			<table>
+				<col width="40%">
+				<col width="60%">
 				<tr>
-					<th>Cores Quentes</th>
-					<th></th>
+					<th rowspan=2><img class="imgTemp" src="data/Picture2.png"></th>
+					<th>Cores Quentes:</th>
 				</tr>
 				<tr>
 					<td>
@@ -54,9 +64,13 @@
 						<p>Em filmes como Kill Bill de Quentin Tarantino, toda a paleta de cores foi em tons próximos ao amarelo e outros tons quentes que vibram na tela. Na cultura Oriental, o amarelo significa “vingança”, isso explica o motivo da cor do figurino. Mas para nós o amarelo também nos remete a “esperança”, “orgulho”, além de ser uma cor que “estimula” o prazer em torcer pela protagonista, fazendo com que uma cena de violência se torne no mínimo necessária para o espectador.</p>
 					</td>
 				</tr>
+			</table><br>
+			<table>
+				<col width="60%">
+				<col width="40%">
 				<tr>
 					<th>Cores Frias</th>
-					<th></th>
+					<th rowspan=2><img class="imgTemp" src="data/Picture3.png"></th>
 				</tr>
 				<tr>
 					<td>
@@ -64,9 +78,10 @@
 						<p>As cores utilizadas em “Labirinto do Fauno”, de Guilherme Del Toro, possuíam tonalidades frias, remetendo a época em que o filme retrata e a trama da obra. A cores facilitam ao espectador sentir a angústia que a personagem principal passava durante o filme. Em tempos de pós-guerra civil espanhola, Ophelia, ainda em luto pela morte de seu pai, como toda criança, procura se distrair e acaba descobrindo o labirinto e seu novo amigo, Fauno. Tudo isso é representado pela escuridão e o medo do desconhecido.</p>
 					</td>
 				</tr>
+			</table><br>
+			<table>
 				<tr>
 					<th>Exemplo</th>
-					<th></th>
 				</tr>
 				<tr>
 					<td><p><canvas data-processing-sources="quentefrio.pde"></canvas></p></td>

@@ -4,6 +4,9 @@
 		<meta charset="UTF-8"/>
 		<title>Projeto Integrado I - G.R.U.P.O.</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
 		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="processing.min.js"></script>
 	</head>
@@ -21,40 +24,43 @@
 			<a id="title">Círculo Cromático</a>
 		</div>
 		<div id="main">
-			<table id="whatisit">
-				<col width="80%">
-				<col width="20%">
+			<table>
 				<tr>
 					<th>O que é o Círculo Cromático</th>
-					<th></th>
 				</tr>
 				<tr>
 					<td>
 						<p>É uma representação simplificada das cores percebidas pelo olho humano. Na maioria das vezes ele é representado fatiado como uma pizza, com 12 pedaços, onde cada um deles é representado por uma cor e essas cores são dispostas de maneira a formar um espectro perfeito. Existem círculos mais complexos que mostram cores primárias, secundárias e terciárias separadas, assim como a escala de tons da cada uma delas.</p>
 					</td>
-					<td><img id="imgChroma" src="data/wheel.png" alt="Chroma"></td>
+					<!--<td><img class="imgChroma" src="data/wheel.png" alt="Chroma"></td>-->
 				</tr>
+			</table><br>
+			<table>
 				<tr>
 					<th>Por que usar?</th>
-					<th></th>
 				</tr>
 				<tr>
 					<td>
 						<p>Conhecer o círculo cromático ajudar a criar combinações de cores mais adequadas para o produto que você deseja produzir, seja qual for o tipo de produto. O círculo cromático é usado por artistas plásticos, estilistas, designers e mais uma infinidade de profissionais para conseguir uma harmonia de cores perfeita, facilitando, e muito, o seu trabalho.</p>
 					</td>
 				</tr>
+			</table><br>
+			<table>
 				<tr>
 					<th>Quais os tipos de combinações?</th>
-					<th></th>
 				</tr>
 				<tr>
 					<td>
-						<p>Os principais tipos de combinações cromáticas são Monocromática, Análoga, Complementar, Complementar Dupla, Complementar Dividida, Tríade, como mostradas na figura ao lado.</p>
+						<p>Os principais tipos de combinações cromáticas são Monocromática, Análoga, Complementar e Tríade.</p>
 					</td>
 				</tr>
+			</table><br>
+			<table>
+				<col width="20%">
+				<col width="80%">
 				<tr>
-					<th>Combinação Monocromática</th>
-					<th></th>
+					<th rowspan=2><img class="imgChroma" src="data/mono.png"></th>
+					<th>Monocromática</th>
 				</tr>
 				<tr>
 					<td>
@@ -63,12 +69,62 @@
 						<p>Ao contrário de outros filmes mais recentes, que possuem a tecnologia para criar uma paleta de cores adequada, “Gritos e Sussuros” de Ingmar Bergman foi feito à moda antiga, através de todo um cuidado para juntar os figurinos, localizações, cenário, maquiagem e iluminação de acordo com a paleta. Apesar de poucas cenas onde o padrão é quebrado, o filme inteiro utiliza de cores vermelhas, essa escolha garante que o espectador vai ser afetado emocionalmente durante a obra.</p>
 					</td>
 				</tr>
+				<tr><td colspan=2><img class="imgChroma" src="data/Picture4.png"></td></tr>
+			</table><br>
+			<table>
+				<col width="80%">
+				<col width="20%">
 				<tr>
-					<th>Exemplo</th>
-					<th></th>
+					<th>Análoga</th>
+					<th rowspan=2><img class="imgChroma" src="data/analog.png"></th>
 				</tr>
 				<tr>
-					<td><p><canvas data-processing-sources="cor.pde"></canvas></p></td>
+					<td>
+						<p>As cores análogas são aquelas que estão próximas umas das outras dentro do círculo cromático.</p>
+						<p>Apesar de que esse conjunto não têm o contraste e tensão que as cores complementares proporcionam, elas criam uma experiência de visualização harmoniosa e calmante. As cores análogas são fáceis de aproveitar em paisagens e exteriores, como muitas vezes são encontrados na natureza.</p>
+						<p>Uma cor pode ser escolhida para dominar, um segundo para suporte, e um terceiro (juntamente com pretos, brancos e tons de cinza) para realce. O filme “Filhos da Esperança” de Alfonso Cuarón utiliza desse tipo de combinação, criando uma fotografia que consegue misturar os personagens e cenários de forma harmônica.</p>
+					</td>
+				</tr>
+				<tr><td colspan=2><img class="imgChroma" src="data/Picture5.png"></td></tr>
+			</table><br>
+			<table>
+				<col width="20%">
+				<col width="80%">
+				<tr>
+					<th rowspan=2><img class="imgChroma" src="data/compl.png"></th>
+					<th>Complementar</th>
+				</tr>
+				<tr>
+					<td>
+						<p>As cores complementares são aquelas que, dentro do círculo cromático, estão posicionadas nas extremidades opostas. Este é de longe a combinação mais comum, muito usada em grandes blockbusters. A cores opostas são frequentemente associadas ao conflito, seja ele interno ou externo.</p>
+						<p>Um exemplo comum é laranja e azul. Isso combina uma cor quente com uma cor fria e produz um alto contraste e resultado vibrante. A saturação deve ser gerenciada, mas essa combinação geralmente é bastante agradável aos olhos. Filmes como “Transformers”, de Michael Bay, “Mad Max: Estrada da Fúria”, de George Miller, e “O Fabuloso Destino de Amélie Poulain”, de Jean-Pierre Jeunet, utilizam dessa combinação. No exemplo abaixo é possível notar o contraste entre o verde e vermelho de uma das cenas do filme de Jean-Pierre Jeunet.</p>
+					</td>
+				</tr>
+				<tr><td colspan=2><img class="imgChroma" src="data/Picture6.png"></td></tr>
+			</table><br>
+			<table>
+				<col width="80%">
+				<col width="20%">
+				<tr>
+					<th>Tríade</th>
+					<th rowspan=2><img class="imgChroma" src="data/triad.png"></th>
+				</tr>
+				<tr>
+					<td>
+						<p>As cores triádicas são três cores dispostas igualmente espaçadas em torno do círculo cromático. Uma deve ser dominante às demais para realçar. Eles vão dar uma sensação vibrante, mesmo que os matizes sejam bastante insaturadas. Para subjugar algumas de suas cores em um esquema triádico, você pode escolher uma cor dominante e usar os outros com moderação, ou simplesmente subjugar as outras duas cores, escolhendo uma tonalidade mais suave. Tríade é um dos esquemas de cores de filme menos comuns, mas pode ser impressionante e vibrante mesmo quando os matizes são insaturados. Stanley Kubrick usa essa combinação em algumas cenas durante a obra “Laranja Mecânica”.</p>
+					</td>
+				</tr>
+				<tr><td colspan=2><img class="imgChroma" src="data/Picture7.png"></td></tr>
+			</table><br>
+			<table>
+				<col width="50%">
+				<col width="50%">
+				<tr>
+					<th colspan=2>Exemplos</th>
+				</tr>
+				<tr>
+					<td><img class="exChroma" src="data/exChroma.png"></td>
+					<td><p><canvas class="exChroma" data-processing-sources="cor.pde"></canvas></p></td>
 				</tr>
 			</table>
 		</div>

@@ -1,19 +1,21 @@
 
 * {
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #444444;
+	background-color: white;
 }
 
 .sidenav {
 	width: 0;
 	position: fixed;
-	z-index: 1;
-	top: 60px;
+	z-index: 2;
+	top: 61px;
 	left: 0;
 	background-color: #f3f3f3;
 	overflow-x: hidden;
 	transition: 0.5s;
 	box-shadow: 5px 5px 10px #CCCCCC;
+	border-radius: 0px 0px 15px 0px;
 }
 
 .sidenav a {
@@ -46,6 +48,8 @@
 	width: 100%;
 	background-color: white;
 	box-shadow: 0px 5px 10px #cccccc;
+	transition: 0.5s;
+	z-index: 1;
 }
 
 #menubar a {
@@ -63,22 +67,28 @@
 }
 
 #title {
+	font-family: 'Righteous', cursive;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 8px;
+	font-weight: bold;
+	font-size: 22px;
 }
 
 #main {
-	margin-top: 70px;
-	padding-right: 280px;
-	padding-left: 280px;
-	padding-top:20px;
+	margin-top: 61px;
+	transition: 0.5s;
+	padding: 10px 280px 0 280px;
 }
 
 #img1, #img2, #img3 {
-	height: 30%;
-	position: fixed;
+	height: 165px;
+	margin: auto;
+	display: block;
 	filter: grayscale(100%);
 	transition: 0.5s;
+	position: relative;
+	border-radius: 50%;
+	box-shadow: 0 10px 20px #CCCCCC;
 }
 
 #img1:hover, #img2:hover, #img3:hover {
@@ -86,31 +96,28 @@
 	transition: 0.5s;
 }
 
-#img1 {
-	top: 20%;
-	left: 41%;
-}
-
-#img2 {
-	bottom: 10%;
-	left: 20%;
-}
-
-#img3 {
-	bottom: 10%;
-	right: 20%;
-}
-
-#imgRGB, #imgCMYK, #imgChroma, #imgType, #imgGrupo, #imgSMD {
+.imgRGB, .imgCMYK, .imgChroma, .imgTemp, .exRGB, .exCMYK, .exChroma, #imgGrupo, #imgSMD {
 	width: 100%;
 }
 
+.img {
+	width: -moz-fit-content;
+	float: left;
+}
+
+.content {
+	margin: 0 auto;
+	width: -moz-fit-content;
+	padding: 150px;
+}
+
 th {
+	font-family: 'Share', cursive;
 	text-align: left;
 }
 
 td {
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 #messagebox {

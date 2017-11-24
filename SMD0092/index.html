@@ -4,8 +4,18 @@
 		<meta charset="UTF-8"/>
 		<title>Projeto Integrado I - G.R.U.P.O.</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
 		<script type="text/javascript" src="script.js"></script>
 	</head>
+	<style>
+		#main {
+			padding: 10px 0 0 0;
+			width: 100%;
+			height: 550px;
+		}
+	</style>
 	<body>
 		<div id="sidebar" class="sidenav">
 			<a href="index.html">Home</a>
@@ -20,15 +30,17 @@
 			<a id="title">Projeto Colour</a>
 		</div>
 		<div id="main">
-			<a href="rgbvcmyk.html">
-				<img id="img1"  src="data/rgbvcmyk.png" alt="RGB v CMYK">
-			</a>
-			<a href="chroma.html">
-				<img id="img2"  src="data/chroma.png" alt="Chroma">
-			</a>
-			<a href="coolvwarm.html">
-				<img id="img3"  src="data/coolvwarm.png" alt="Cool v Warm">
-			</a>
+			<div class="content">
+				<p class="img"><a href="rgbvcmyk.html">
+					<img id="img1" src="data/rgbvcmyk.png">
+				</a></p>
+				<p class="img" style="margin-left: 82.5px; margin-right: 82.5px;"><a href="chroma.html">
+					<img id="img2" src="data/chroma.png">
+				</a></p>
+				<p class="img"><a href="coolvwarm.html">
+					<img id="img3" src="data/coolvwarm.png">
+				</a></p>
+			</div>
 		</div>
 	</body>
 </html>
