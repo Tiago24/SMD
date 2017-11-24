@@ -1,4 +1,4 @@
-#SMD0092 - Projeto Integrado I
+# SMD0092 - Projeto Integrado I
 
 Equipe 5 - G.R.U.P.O.
 
