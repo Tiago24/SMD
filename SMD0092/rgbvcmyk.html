@@ -8,7 +8,10 @@
 	</head>
 	<body>
 		<div id="sidebar" class="sidenav">
-			<a href="index.html">Principal</a>
+			<a href="index.html">Home</a>
+            <a href="rgbvcmyk.html">RGB v CMYK</a>
+            <a href="chroma.html">Círculo Cromático</a>
+            <a href="coolvwarm.html">Cores Quentes e Frias</a>
 			<a href="contact.html">Contato</a>
 			<a href="about.html">Sobre</a>
 		</div>
@@ -21,26 +24,64 @@
 				<col width="80%">
 				<col width="20%">
 				<tr>
-					<th>RGB</th>
+					<th>O que é RGB:</th>
 					<th></th>
 				</tr>
 				<tr>
-					<td>Explicação sobre RGB.</td>
-					<td><img id="imgRGB" src="data/rgb.png" alt="RGB"></td>
+					<td><p>RGB é a sigla do sistema de cores aditivas formado pelas iniciais das cores em inglês Red, Green e Blue, que significa em português, respectivamente, Vermelho, Verde e Azul. O propósito principal do sistema RGB é a reprodução de cores em dispositivos eletrônicos como monitores de TV e computador, projetores, smartphones e câmeras digitais.
+                        </p>
+                        <p>As cores são obtidas através das misturas das três cores primárias, em quantidades determinadas. Cada uma das cores obtidas estão enquadradas numa escala que varia de 0 a 255. Quando a mistura das três cores está no valor mínimo (0, 0, 0), o resultado é a cor preta. Quanto está no máximo (255, 255, 255), resulta na cor branca.
+                        </p>
+</td>
+                    <td><img id="imgRGB" src="data/rgb.png" alt="RGB"></td>
+                </tr>
+                <tr>
+					<th>Origem do RGB:</th>
+					<th></th>
 				</tr>
+                <tr>
+					<td>
+                        <p>Thomas Young foi um físico, médico e egiptólogo britânico que propôs a teoria tricromática, segundo a qual o olho humano teria receptores para três cores primárias (vermelho, verde, azul), já as outras cores seriam combinações destas três cores feitas pelo cérebro.  Hermann von Helmholtz, um matemático, médico e físico alemão,  desenvolveu essa teoria posteriormente. 
+James Clerk Maxwell, um físico e matemático escocês, por sempre possuir interesses na percepção de cores pelo olho humano, estudou a teoria tricromática e usando sua invenção do filtro de cores triplo(que mais tarde resultaría no sistema RGB), desvendou informações sobre o daltonismo, mostrando que esse problema provém da ausência de um dos três receptores de cores no nervo ótico(vermelho, verde ou azul).
+                        </p>
+                        <p>
+Esta teoria é até hoje uma base para a compreensão da visão colorida, embora não leve em conta determinados aspectos sutis da visão, tanto no que se refere ao funcionamento celular quanto ao processamento da informação sobre as cores no cérebro humano. Hoje sabemos que o olho humano possui dois tipos de células sensíveis à luz: os bastonetes e os cones. 
+Os bastonetes têm a função de formar a imagem com precisão e trabalhar com diferentes intensidades de luz. Os cones são as células cromáticas, que possuem sensibilidades diferentes para diversos comprimentos de onda da luz. São eles, portanto, que nos permitem distinguir as cores. A falta de alguns tipos de cones é que causa as diversas variações do daltonismo.
+                         </p>
+                    </td>
+                </tr>
+                <tr>
+					<th>Representação numérica:</th>
+					<th></th>
+				</tr>
+                <tr>
+					<td>
+                        <p>Qualquer cor através do modelo de cores RGB pode ser representada pela quantidade de pigmento vermelho, verde e azul que ela tem. Essa variação irá acontecer da menor quantidade com tons mais escuros até a maior quantidade com tons mais claros. Quando todas as cores estão no mínimo, o resultado é preto. Se todas estão no máximo, o resultado é branco. A representação mais utilizada para as cores é a utilização da escala de 0 à 255, bastante encontrada na computação pela conveniência de se guardar cada valor de cor em 1 byte (8 bits). Outra representação é através do numérico real. Onde os valores de cores podem ser alterados de 0 a 1. 
+                        </p>
+                        <p>
+Porém, na maioria dos programas de edição de imagens, esses valores são habitualmente representados por meio de notação hexadecimal, também chamado de Web colors. Ele utiliza um número de seis dígitos formado por três bytes em hexadecimal. Esses bytes representam respectivamente as cores Vermelha, Verde e Azul(RGB). Cada byte usa a faixa de 00 a FF, assim a cor #000000 é o preto, pois não há projeção de nenhuma das três cores e em contrapartida #FFFFFF representa a cor branca, pois as três cores estariam projetadas em sua intensidade máxima.
+                        </p>
+                     </td>
+                </tr>
 			</table>
 			<table id="cmyk">
 				<col width="20%">
 				<col width="80%">
 				<tr>
 					<th></th>
-					<th>CMYK</th>
+					<th>Mas e o CMYK ?</th>
 				</tr>
 				<tr>
 					<td><img id="imgCMYK" src="data/cmyk.png" alt="CMYK"></td>
-					<td>Explicação sobre CMYK.</td>
-				</tr>
+					<td><p>CMYK é a abreviatura do sistema de cores subtrativas formado por Ciano (Cyan), Magenta (Magenta), Amarelo (Yellow) e Preto (Key). Ao contrario de RGB, CMYK é um sistema subtrativo de cores. Ele funciona devido à absorção de luz, pelo fato de que as cores que são vistas vêm da parte da luz que não é absorvida, desta forma, é possível enxergar uma blusa amarela por ela absorver todas as cores presentes na luz solar exceto a amarela. Este sistema é empregado por imprensas, impressoras e fotocopiadoras para reproduzir a maioria das cores do espectro visível.
+Ciano é a cor oposta ao vermelho, o que significa que actua como um filtro que absorve a dita cor (-R +G +B). Da mesma forma, magenta é a oposta ao verde (+R -G +B) e amarelo é a oposta ao azul (+R +G -B). Assim, magenta mais amarelo produzirá vermelho, magenta mais ciano produzirá azul e ciano mais amarelo produzirá verde.
+                        </p><p>
+O preto é uma cor formada pela mistura de todas as outras cores, e pode ser utilizado nos impressos com a combinação de 100% de cada cor(CMYK). Porém, esta prática pode danificar alguns impressos, chegando a rasgar papéis, principalmente os de menor espessura. Outro ponto importante é que trabalhar apenas com o preto composto encarece a produção.
+</p>    
+</tr>   
 			</table>
+            
+            
 		</div>
 	</body>
 </html>

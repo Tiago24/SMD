@@ -1,30 +1,40 @@
+
 * {
-	font-family: "Source Code Pro Black";
+	font-family: "roboto";
+	color: #444444;
+
 }
 
 .sidenav {
-    height: 16%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 60px;
     left: 0;
-    background-color: black;
+    background-color: #f3f3f3;
     overflow-x: hidden;
     transition: 0.5s;
+	box-shadow: 5px 5px 10px #cccccc;
+	
+	
+	
+	
 }
 
 .sidenav a {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    color: #818181;
+    color: #444444;
     display: block;
     transition: 0.5s;
     text-align: center;
+	border-bottom: 1px solid #444444;
+
 }
 
 .sidenav a:hover {
-    color: #F1F1F1;
+	background-color:#444499;
+    color: white;
 }
 
 .sidenav .closeBtn {
@@ -32,7 +42,9 @@
     top: 0;
     right: 25px;
     margin-left: 50px;
+
 }
+
 
 #menubar {
 	padding: 10px;
@@ -40,16 +52,22 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #A0A0A0;
-}
+	background-color: white;
+	box-shadow: 0px 5px 10px #cccccc;
+
+	
+	}
 
 #menubar a {
 	float: left;
 	text-align: left;
+	
+	
 }
 
 #icon, #title {
-	color: white;
+	color: #444444;
+	
 }
 
 #icon {
@@ -60,24 +78,33 @@
 #title {
 	margin-left: 20px;
 	margin-top: 10px;
+
 }
 
 #main {
 	margin-top: 70px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-right: 280px;
+	padding-left: 280px;
+	padding-top:20px;
+	
 }
 
 #img1, #img2, #img3 {
 	height: 30%;
 	position: fixed;
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+
+#img1:hover, #img2:hover, #img3:hover {
+	filter: grayscale(0%);
+	transition: 0.5s;
 }
 
 #img1 {
 	top: 20%;
 	left: 41%;
 }
-
 #img2 {
 	bottom: 10%;
 	left: 20%;
@@ -88,13 +115,12 @@
 	right: 20%;
 }
 
-#rgb, #cmyk, #whatisit, #type, #diff, #adv, #team, #smd {
-	padding: 30px;
-}
-
 #imgRGB, #imgCMYK, #imgChroma, #imgType, #imgGrupo, #imgSMD {
 	width: 100%;
+	
 }
+
+
 
 th {
 	text-align: left;
