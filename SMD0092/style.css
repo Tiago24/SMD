@@ -1,50 +1,42 @@
 
 * {
-	font-family: "roboto";
+	font-family: "Roboto Condensed", sans-serif;
 	color: #444444;
-
 }
 
 .sidenav {
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 60px;
-    left: 0;
-    background-color: #f3f3f3;
-    overflow-x: hidden;
-    transition: 0.5s;
-	box-shadow: 5px 5px 10px #cccccc;
-	
-	
-	
-	
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 60px;
+	left: 0;
+	background-color: #f3f3f3;
+	overflow-x: hidden;
+	transition: 0.5s;
+	box-shadow: 5px 5px 10px #CCCCCC;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    color: #444444;
-    display: block;
-    transition: 0.5s;
-    text-align: center;
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	color: #444444;
+	display: block;
+	transition: 0.5s;
+	text-align: center;
 	border-bottom: 1px solid #444444;
-
 }
 
 .sidenav a:hover {
 	background-color:#444499;
-    color: white;
+	color: white;
 }
 
 .sidenav .closeBtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
-
+	position: absolute;
+	top: 0;
+	right: 25px;
+	margin-left: 50px;
 }
-
 
 #menubar {
 	padding: 10px;
@@ -54,20 +46,15 @@
 	width: 100%;
 	background-color: white;
 	box-shadow: 0px 5px 10px #cccccc;
-
-	
-	}
+}
 
 #menubar a {
 	float: left;
 	text-align: left;
-	
-	
 }
 
 #icon, #title {
 	color: #444444;
-	
 }
 
 #icon {
@@ -78,7 +65,6 @@
 #title {
 	margin-left: 20px;
 	margin-top: 10px;
-
 }
 
 #main {
@@ -86,7 +72,6 @@
 	padding-right: 280px;
 	padding-left: 280px;
 	padding-top:20px;
-	
 }
 
 #img1, #img2, #img3 {
@@ -105,6 +90,7 @@
 	top: 20%;
 	left: 41%;
 }
+
 #img2 {
 	bottom: 10%;
 	left: 20%;
@@ -117,10 +103,7 @@
 
 #imgRGB, #imgCMYK, #imgChroma, #imgType, #imgGrupo, #imgSMD {
 	width: 100%;
-	
 }
-
-
 
 th {
 	text-align: left;
