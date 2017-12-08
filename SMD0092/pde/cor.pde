@@ -48,7 +48,7 @@ void draw() {
     rect(425, 20, 50, 50);
     textAlign(CENTER, CENTER);
     fill(0);
-    text("Analoga", 620, 370);
+    text("Análogas", 620, 370);
     text("Comp", 350, 45);
     text("Ana", 400, 45);
     text("SComp", 450, 45);
@@ -111,7 +111,7 @@ void complementar() {
   fill(corbas1);
   rect(500, 150, 240, 200);
   fill(corbas2);
-  rect(595, 225, 50, 50);
+  ellipse(620, 250, 100, 100);
 
   if (mousePressed) {
     //compcor1 = (compcor1+1)%360;

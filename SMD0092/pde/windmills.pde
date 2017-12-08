@@ -42,10 +42,10 @@ void circleCMYK(int x, int y) {
 }
 
 void mousePressed() {
-  if(mouseButton == LEFT && fps < 120) {
+  if(mouseButton == LEFT && fps < 90) {
     fps += 10;
   }
-  else if(mouseButton == RIGHT && fps > -120) {
+  else if(mouseButton == RIGHT && fps > -90) {
     fps -= 10;
   }
   else if(mouseButton == CENTER) {
