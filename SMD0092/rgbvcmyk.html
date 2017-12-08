@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/processing.min.js"></script>
 	</head>
 	<body>
 		<div id="sidebar" class="sidenav">
@@ -83,14 +84,14 @@
 				</tr>
 			</table><br>
 			<table>
-				<col width="50%">
-				<col width="50%">
 				<tr>
-					<th colspan=2>Exemplos</th>
+					<th>Exemplos</th>
 				</tr>
 				<tr>
-					<td><img class="exRGB" src="img/exRGB.png"></td>
-					<td><img class="exCMYK" src="img/exCMYK.png"></td>
+					<td><p><canvas data-processing-sources="pde/panelRGB.pde"></canvas></p></td>
+				</tr>
+				<tr>
+					<td><p><canvas data-processing-sources="pde/windmills.pde"></canvas></p></td>
 				</tr>
 			</table>
 		</div>

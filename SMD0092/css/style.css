@@ -96,7 +96,7 @@
 	transition: 0.5s;
 }
 
-.imgRGB, .imgCMYK, .imgChroma, .imgTemp, .exRGB, .exCMYK, .exChroma, #imgGrupo, #imgSMD {
+.imgRGB, .imgCMYK, .imgChroma, .imgTemp, #imgGrupo, #imgSMD {
 	width: 100%;
 }
 
