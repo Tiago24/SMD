@@ -23,7 +23,7 @@ static void trataRedimensionamentoDeJanela( int w, int h);
 
 int main( int argc, char** argv )
 {
-	scene = ObjTextFileParser( objFilenames[0] ).parseScene();
+	scene = ObjTextFileParser( objFilename ).parseScene();
 	box = getBoundingBox(*scene);
 
 
