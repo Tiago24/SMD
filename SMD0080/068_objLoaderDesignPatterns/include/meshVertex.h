@@ -1,7 +1,7 @@
 #ifndef MESHVERTEX_CLASS_H
 #define MESHVERTEX_CLASS_H
 
-#include "vec3.h"
+#include "vector3D.h"
 
 struct Vertex
 {
@@ -9,17 +9,15 @@ struct Vertex
 		: position(), normal(), texture()
 	{
 	}
-	Vertex(const Vec3& pos, const Vec3& n=Vec3(), const Vec2& tex = Vec2() )
+
+	Vertex(const Vector3D& pos, const Vector3D& n = Vector3D(), const Vec2& tex = Vec2())
 		: position(pos), normal(n), texture(tex)
 	{
 	}
 
-	Vec3 position;
-	Vec3 normal;
-	Vec2 texture;
+	Vector3D position;
+	Vector3D normal;
+	Vector2D texture;
 };
 
-
 #endif
-
-

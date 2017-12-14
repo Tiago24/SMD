@@ -1,37 +1,28 @@
-#ifndef SIMPLECAMERA_CLASS_H
-#define SIMPLECAMERA_CLASS_H
+#ifndef CAMERA_CLASS_H
+#define CAMERA_CLASS_H
 
 #include "triangleMesh.h"
 
 struct Camera
 {
-	/// Câmera padrão, evita dores de cabeça
 	static Camera defaultCamera;
 
-	/// Construtor padrão
 	Camera();
 
-	void updateAspect( int width, int height );
-	Vec3 windowToNdc( int x, int y );
+	void updateAspect(int width, int height);
+	Vector3D windowToNDC(int x, int y);
 
-	// ================================
-	// Usado na projeção em perspectiva
 	double fovy;
 	double aspectRatio;
 	double zNear;
 	double zFar;
 
-	// ================================
-	// Usado para resolver aspecto, etc
 	unsigned int width;
 	unsigned int height;
 
-	// ================================
-	// Usado no posicionamento
-	Vec3 position;
-	Vec3 target;
-	Vec3 up;
+	Vector3D position;
+	Vector3D target;
+	Vector3D up;
 };
 
-
-#endif /* SIMPLECAMERA_CLASS_H */
+#endif /* CAMERA_CLASS_H */

@@ -1,5 +1,5 @@
-#ifndef VEC2D_CLASS_H
-#define VEC2D_CLASS_H
+#ifndef VECTOR2D_CLASS_H
+#define VECTOR2D_CLASS_H
 
 #include <cmath>
 #include <string>
@@ -12,15 +12,15 @@
 typedef std::string String;
 typedef std::istringstream StringInputStream;
 
-class Vec2
+class Vector2D
 {
 public:
 
-	const static Vec2 ZERO;
-	const static Vec2 X_AXIS;
-	const static Vec2 Y_AXIS;
+	const static Vector2D ZERO;
+	const static Vector2D X_AXIS;
+	const static Vector2D Y_AXIS;
 
-	Vec2( float xx=0, float yy=0 )
+	Vector2D( float xx=0, float yy=0 )
 	 : x(yy), y(yy)
 	{}
 
@@ -33,7 +33,7 @@ public:
 		return ( x*x + y*y );
 	}
 
-	float distance( const Vec2& v ) const
+	float distance( const Vector2D& v ) const
 	{
 		const float dx = x - v.x;
 		const float dy = y - v.y;
@@ -41,33 +41,33 @@ public:
 		return sqrt( dx*dx + dy*dy );
 	}
 
-	float distance2( const Vec2& v ) const
+	float distance2( const Vector2D& v ) const
 	{
 		const float dx = x - v.x;
 		const float dy = y - v.y;
 
 		return dx*dx + dy*dy;
 	}
-	float cross(const Vec2& v) const
+	float cross(const Vector2D& v) const
 	{
 		return x*v.y - y*v.x;
 	}
 
-	Vec2 operator-(const Vec2& v) const
+	Vector2D operator-(const Vector2D& v) const
 	{
-		return Vec2( x-v.x, y-v.y );
+		return Vector2D( x-v.x, y-v.y );
 	}
-	Vec2 operator-() const
+	Vector2D operator-() const
 	{
-		return Vec2( -x, -y );
+		return Vector2D( -x, -y );
 	}
 
-	Vec2& normalize()
+	Vector2D& normalize()
 	{
 		return (*this) /= magnitude();
 	}
 
-	Vec2& operator /=(float f)
+	Vector2D& operator /=(float f)
 	{
 		x /= f;
 		y /= f;
@@ -75,7 +75,7 @@ public:
 		return *this;
 	}
 
-	Vec2& operator =( const Vec2& v )
+	Vector2D& operator =( const Vector2D& v )
 	{
 		x = v.x;
 		y = v.y;
@@ -83,9 +83,7 @@ public:
 		return *this;
 	}
 
-
 	float x, y;
 };
 
 #endif
-
