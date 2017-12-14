@@ -1,3 +1,5 @@
+// Presentes: Arthur e Vitor
+
 #include "renderer.h"
 #include "loader/objTextFileParser.h"
 
@@ -8,8 +10,26 @@
 #include <IL/ilu.h>
 #include <IL/ilut.h>
 
+enum MenuItems
+{
+	MI_MACACO = 0,
+	MI_WIZMONK,
+	MI_BIZARRE,
+	MI_CASA,
+	MI_RAPTOR,
+	MI_SAIR
+};
+
 // o truque do mapeamento ;)
-const char* objFilename = "models/coffee.obj";
+const char* objFilenames[] =
+{
+		"models/macaco.obj", // for MI_MACACO
+		"models/wizmonk.obj",
+		"models/ds.obj",
+		"models/casa.obj",
+		"models/raptor.obj",
+		""
+};
 
 static Camera& camera = Camera::defaultCamera;
 static Scene* scene = nullptr;
@@ -17,6 +37,7 @@ static bool msaaEnabled = false;
 static Box3 box;
 
 static void meuPintaCena();
+static void trataEventoDeMenu(int);
 static void trataEventosDeTeclado(unsigned char key, int x, int y);
 static void trataRedimensionamentoDeJanela( int w, int h);
 
@@ -46,6 +67,16 @@ int main( int argc, char** argv )
 	glutDisplayFunc( meuPintaCena );	
 	glutKeyboardFunc( trataEventosDeTeclado );
 	
+	//
+	glutCreateMenu( trataEventoDeMenu );
+		glutAddMenuEntry("Carregar \"Casa\""   , MI_CASA);
+		glutAddMenuEntry("Carregar \"Raptor\"" , MI_RAPTOR);
+		glutAddMenuEntry("Carregar \"Macaco\"" , MI_MACACO);
+		glutAddMenuEntry("Carregar \"Wizmonk\"", MI_WIZMONK);
+		glutAddMenuEntry("Carregar \"Bizarre\"", MI_BIZARRE);
+		glutAddMenuEntry("Sair", MI_SAIR);
+	glutAttachMenu(GLUT_RIGHT_BUTTON);
+
 	// configurações globais
 	glPointSize( 8.0f );
 	glLineWidth( 1.5f );
@@ -163,5 +194,34 @@ void trataEventosDeTeclado( unsigned char key, int x, int y)
 		exit(-1);
 		break; 	
 	}
+}
+
+void trataEventoDeMenu(int id )
+{
+	delete scene;
+
+	if( id == MI_SAIR )
+	{
+		exit(-1);
+	}
+
+	// aplica o truque!
+	scene = ObjTextFileParser( objFilenames[ id % MI_SAIR ] ).parseScene();
+
+	if( scene )
+	{
+		//scale = 1.0f /getBoundingBox(*scene).getScale();
+		box = getBoundingBox(*scene);
+		camera.target = box.center();
+		camera.position = box.center() + 2*box.extents().magnitude()*Vec3::Z_AXIS;
+		//scale = 1.0f;
+		std::cout << scene->size() << std::endl;
+
+	}else
+	{
+		std::cerr << "Erro ao carregar\n";
+	}
+
+	glutPostRedisplay();
 }
 
