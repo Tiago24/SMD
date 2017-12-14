@@ -1,7 +1,7 @@
 #ifndef BOX3D_CLASS_H
 #define BOX3D_CLASS_H
 
-#include "vector3D.h"
+#include "vector3d.h"
 
 #include <cfloat>
 #include <algorithm>

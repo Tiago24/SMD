@@ -1,7 +1,7 @@
 #ifndef VECTOR3D_CLASS_H
 #define VECTOR3D_CLASS_H
 
-#include "vector2D.h"
+#include "vector2d.h"
 
 class Vector3D
 {

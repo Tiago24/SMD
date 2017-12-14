@@ -1,7 +1,7 @@
 #ifndef MESHMATERIAL_CLASS_H
 #define MESHMATERIAL_CLASS_H
 
-#include "vec3.h"
+#include "vector3d.h"
 
 struct Color
 {

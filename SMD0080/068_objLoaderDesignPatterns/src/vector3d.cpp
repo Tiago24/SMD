@@ -1,4 +1,4 @@
-#include "vector3D.h"
+#include "vector3d.h"
 
 const Vector3D Vector3D::ZERO(0,0,0);
 const Vector3D Vector3D::X_AXIS(1,0,0);

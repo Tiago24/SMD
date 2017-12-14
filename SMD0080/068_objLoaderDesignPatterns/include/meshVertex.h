@@ -1,7 +1,7 @@
 #ifndef MESHVERTEX_CLASS_H
 #define MESHVERTEX_CLASS_H
 
-#include "vector3D.h"
+#include "vector3d.h"
 
 struct Vertex
 {
